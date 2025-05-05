@@ -1,3 +1,6 @@
+const { startEventHub } = require("./eventHub");
+startEventHub(4000); // starts WS hub before anything else
+
 const express = require("express");
 const app = express();
 app.use(express.json());
